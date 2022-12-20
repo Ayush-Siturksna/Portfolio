@@ -1,6 +1,8 @@
 header {
     height: 100vh;
     padding-top: 7rem;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -8,6 +10,7 @@ header {
     text-align: center;
     height: 100%;
     position: relative;
+    align-items: center;
 }
 
 /*========CTA========*/
@@ -24,10 +27,128 @@ header {
 .header_socials{
     
     display: flex;
-    flex-direction: column;
-    gap:0.8 rem;
+        flex-direction: row;
+        gap:2rem;
+        align-items: center;
+        scale: 1.5;
+        left: 50%;
+        transform: translate(-50%);
+        
+        position: absolute;
+        bottom: 1rem;
+        
+}
+
+
+
+/* ===========ME============= */
+
+.me{
+    background: linear-gradient(var(--color-primary-variant),transparent) ;
+    scale: 0.75;
     align-items: center;
-    left: 0;
+    
+    bottom: 1rem;
+    
+    right: 50%;
+    transform: translateX(60%);
     position: absolute;
-    bottom: 3rem;
+    border-radius: 13rem 14rem 12rem 12rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    
+
+}
+
+.scroll_down{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    right: -2.3rem;
+    bottom: 2rem;
+    scale: 2;
+}
+
+
+/*========Media Querries(Medium Devices)======*/
+
+@media screen and (max-width: 1024px) {
+    header{
+        height: 58vh;
+    }
+    .me{
+        align-items: center;
+        width: 22rem;
+        margin-bottom: 2rem;
+        height: max-content;
+        top: 40%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-70%);
+    }
+
+}
+
+/*========Media Querries(Small Devices)======*/
+
+@media screen and (max-width: 600px) {
+
+    header{
+        height: 80vh;
+    }
+    .scroll_down {
+        display: none;
+    }
+    .header_socials{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+        align-items: center;
+        
+        left: 50%;
+        transform: translate(-50%);
+        
+        
+        position: absolute;
+        bottom: 3rem;
+    }
+
+    .me{
+        align-items: center;
+        width: 22rem;
+        bottom: 4rem;
+        top: 35%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-70%);
+        
+        
+    }
+}  
+
+
+
+@media screen and (max-height: 700px){
+
+    header{
+        height: 80vh;
+    }
+    
+}
+
+@media screen and (max-width: 376px){
+
+    header{
+        height: 100vh;
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+
+    header{
+        height: 100vh;
+    }
+    
 }
