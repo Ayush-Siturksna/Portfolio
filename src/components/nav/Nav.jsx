@@ -8,6 +8,35 @@ import {useState} from 'react'
 const Nav = () => {
 
     const[activeNav,setActiveNav]= useState('#')
+
+    // return (
+    //     <nav>
+    //          <div>
+             
+    //          <a href="#" onClick={()=>setActiveNav('#')} className={activeNav==='#'?'active':''}><AiOutlineHome/></a> 
+    //          <h6>Home</h6>        
+    //          </div>
+    //          <div>
+    //          <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav==='#about'?'active':''} ><AiOutlineUser/></a>
+    //          <h6>About</h6>  
+    //          </div>
+    //          <div>
+    //          <a href="#portfolio" onClick={()=>setActiveNav('#portfolio')}  className={activeNav==='#portfolio'?'active':''} ><MdWorkOutline/></a>
+    //          <h6>Skills</h6>  
+    //          </div>
+    //         <div>
+    //         <a href="#contact" onClick={()=>setActiveNav('#contact')}  className={activeNav==='#contact'?'active':''} ><TiContacts/></a>
+    //         <h6>Contact</h6>  
+    //         </div>
+            
+            
+           
+            
+            
+
+
+    //     </nav>
+    // )
  
     return (
         <nav>
