@@ -14,8 +14,12 @@ const Portfolio = () => {
                    <div className="skills_content">
                      <article className='skill_details'>
                      <BsPatchCheckFill/>
+                     <div>
                      <h4>PYTHON</h4>
                      <small className='text-light'>Experienced</small>
+
+                     </div>
+                     
                      </article>
                      
                      <article className='skill_details'>
@@ -82,7 +86,7 @@ const Portfolio = () => {
                 <div className='skill_image'>
                     <div className="skill_image_content">
                         <img src={SKILL} className='skill_image_content'  alt="Skill Image"/>
-                        <article>If you are looking for Experience ,I don't have much of it,
+                        <article>If you are looking for fake Experience ,I don't have it,
                         but what I have is a particular set of skills that I have acquired over a period of time 
                         ,which makes me nightmare for people with fake experience and lacking skills.
                         </article> 

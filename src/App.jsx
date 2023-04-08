@@ -9,7 +9,19 @@ import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
+// const App = () => {
+//     return (
+//         <>
+//          <Header/>
+//          <Nav/>
+//          <About/>    
+//          <Portfolio/>
+//          <Contact/>
+         
 
+//         </>
+//     )
+// }
 
 const App = () => {
     return (
