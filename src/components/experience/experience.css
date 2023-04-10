@@ -25,7 +25,7 @@
 }
 
 .experience_item:hover {
-    
+    justify-content: center;
     background:linear-gradient(var(--color-primary-variant),transparent);
 }
 

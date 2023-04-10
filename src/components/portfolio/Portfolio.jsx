@@ -61,7 +61,12 @@ const softdata=[
       {
         "name": "Writing",
         "level": "4/5"
+      } ,
+      {
+        "name": "Creativity",
+        "level": "5/5"
       }
+
 
 
 ];

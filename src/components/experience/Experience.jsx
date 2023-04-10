@@ -1,51 +1,64 @@
 import React from 'react'
 import './experience.css'
 import Project from './projectcomp'
+import {FiExternalLink} from  'react-icons/fi'
 
 const projects = 
 [
      {
-       "name": "Project 1",
+       "name": "Virtual Trading App",
        "description": "A web application for managing tasks and to-do lists.",
-       "imageUrl": "portfolio1.jpg",
+       "imageUrl": "portfolio1.png",
        "git": "https://github.com",
-       "demo": "https://youtube.com"
+       "demo": "https://youtube.com",
+       "Icon":FiExternalLink
+       
      },
      {
-       "name": "Project 2",
+      "name": "Responsive Portfolio",
+      "description": "A social network for pet owners to connect and share photos.",
+      "imageUrl": "portfolio4.png",
+      "git": "https://github.com",
+      "demo": "https://youtube.com",
+      "Icon":FiExternalLink
+     
+    },
+     {
+       "name": "Automatic list fetch",
        "description": "A mobile app for tracking daily water intake.",
-       "imageUrl": 'portfolio2.jpg',
+       "imageUrl": 'portfolio2.png',
        "git": "https://github.com",
-       "demo": "https://youtube.com"
+       "demo": "https://youtube.com",
+       "Icon":FiExternalLink
+    
      },
      {
-       "name": "Project 3",
+       "name": "MultiCloud Infra Code",
        "description": "A browser extension for dark mode on websites.",
-       "imageUrl": "portfolio3.jpg",
+       "imageUrl": "portfolio3.png",
        "git": "https://github.com",
-       "demo": "https://youtube.com"
+       "demo": "https://youtube.com",
+       "Icon":FiExternalLink
+     
      },
+   
      {
-       "name": "Project 4",
-       "description": "A social network for pet owners to connect and share photos.",
-       "imageUrl": "portfolio4.jpg",
-       "git": "https://github.com",
-       "demo": "https://youtube.com"
-     },
-     {
-       "name": "Project 5",
+       "name": "3D Pesticide Sprayer",
        "description": "An e-commerce platform for buying and selling handmade crafts.",
        "imageUrl": "portfolio5.png",
        "git": "https://github.com",
-       "demo": "https://youtube.com"
+       "demo": "https://youtube.com",
+       "Icon":FiExternalLink
+       
      }, 
      
      {
-      "name": "Project 6",
+      "name": "Jbrowse GPT3 Integration",
       "description": "An e-commerce platform for buying and selling handmade crafts.",
-      "imageUrl": "portfolio6.jpg",
+      "imageUrl": "portfolio6.png",
       "git": "https://github.com",
-      "demo": "https://youtube.com"
+      "demo": "https://youtube.com",
+      "Icon":FiExternalLink
     }
    ]
 ; 

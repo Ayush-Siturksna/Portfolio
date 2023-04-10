@@ -25,11 +25,6 @@ const data= [
    }
    ,
    {
-    "name":"hobbies" ,
-    "Icon":SlGameController,
-    
-   },
-   {
     "name":"contact" ,
     "Icon":TiContacts,
     
