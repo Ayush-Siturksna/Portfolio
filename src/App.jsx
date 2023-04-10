@@ -30,12 +30,9 @@ const App = () => {
          <Nav/>
          <About/>    
          <Portfolio/>
-         <Experience/>
-         <Testimonials/>
-         <Hobbies/>
+         <Experience/>    
          <Contact/>
-         <Footer />
-
+       
         </>
     )
 }
