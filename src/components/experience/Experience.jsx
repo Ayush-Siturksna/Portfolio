@@ -10,7 +10,7 @@ const projects =
        "description": "A web application for managing tasks and to-do lists.",
        "imageUrl": "portfolio1.png",
        "git": "https://github.com",
-       "demo": "https://youtube.com",
+       "demo": "https://youtu.be/nwMy-AQqBSw",
        "Icon":FiExternalLink
        
      },
@@ -19,7 +19,7 @@ const projects =
       "description": "A social network for pet owners to connect and share photos.",
       "imageUrl": "portfolio4.png",
       "git": "https://github.com",
-      "demo": "https://youtube.com",
+      "demo": "https://ayush-siturksna.github.io/Portfolio/",
       "Icon":FiExternalLink
      
     },
@@ -28,7 +28,7 @@ const projects =
        "description": "A mobile app for tracking daily water intake.",
        "imageUrl": 'portfolio2.png',
        "git": "https://github.com",
-       "demo": "https://youtube.com",
+       "demo": "https://youtu.be/tlTub-lxHTk",
        "Icon":FiExternalLink
     
      },
@@ -37,7 +37,7 @@ const projects =
        "description": "A browser extension for dark mode on websites.",
        "imageUrl": "portfolio3.png",
        "git": "https://github.com",
-       "demo": "https://youtube.com",
+       "demo": "https://youtu.be/0XbFL_4UmZw",
        "Icon":FiExternalLink
      
      },
@@ -47,7 +47,7 @@ const projects =
        "description": "An e-commerce platform for buying and selling handmade crafts.",
        "imageUrl": "portfolio5.png",
        "git": "https://github.com",
-       "demo": "https://youtube.com",
+       "demo": "https://youtu.be/f8FDuFzmYAo",
        "Icon":FiExternalLink
        
      }, 
@@ -57,7 +57,7 @@ const projects =
       "description": "An e-commerce platform for buying and selling handmade crafts.",
       "imageUrl": "portfolio6.png",
       "git": "https://github.com",
-      "demo": "https://youtube.com",
+      "demo": "https://youtu.be/vUJkxGPJyZY",
       "Icon":FiExternalLink
     }
    ]
