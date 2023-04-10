@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkappversion1=self.webpackChunkappversion1||[]).push([[670],{670:function(e,p,s){e.exports=s.p+"static/media/2me.897a82d0e2d9b2c16ce8.png"}}]);
