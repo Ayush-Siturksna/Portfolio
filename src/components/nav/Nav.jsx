@@ -5,67 +5,56 @@ import {TiContacts} from 'react-icons/ti'
 import {SlGameController} from 'react-icons/sl'
 import './nav.css'
 import {useState} from 'react'
+import Navcomp from './Navcomp'
+
+const data= [
+    {
+        "name":"" ,
+        "Icon":AiOutlineHome,
+    
+    },
+    {
+    "name":"about" ,
+    "Icon":AiOutlineUser,
+    
+   },
+   {
+    "name":"experience" ,
+    "Icon":MdWorkOutline,
+    
+   }
+   ,
+   {
+    "name":"hobbies" ,
+    "Icon":SlGameController,
+    
+   },
+   {
+    "name":"contact" ,
+    "Icon":TiContacts,
+    
+   }
+   
+
+]
+
+
 const Nav = () => {
 
     const[activeNav,setActiveNav]= useState('#')
 
-    // return (
-    //     <nav>
-    //          <div>
-             
-    //          <a href="#" onClick={()=>setActiveNav('#')} className={activeNav==='#'?'active':''}><AiOutlineHome/></a> 
-    //          <h6>Home</h6>        
-    //          </div>
-    //          <div>
-    //          <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav==='#about'?'active':''} ><AiOutlineUser/></a>
-    //          <h6>About</h6>  
-    //          </div>
-    //          <div>
-    //          <a href="#portfolio" onClick={()=>setActiveNav('#portfolio')}  className={activeNav==='#portfolio'?'active':''} ><MdWorkOutline/></a>
-    //          <h6>Skills</h6>  
-    //          </div>
-    //         <div>
-    //         <a href="#contact" onClick={()=>setActiveNav('#contact')}  className={activeNav==='#contact'?'active':''} ><TiContacts/></a>
-    //         <h6>Contact</h6>  
-    //         </div>
-            
-            
-           
-            
-            
 
-
-    //     </nav>
-    // )
  
     return (
         <nav>
-             <div>
-             
-             <a href="#" onClick={()=>setActiveNav('#')} className={activeNav==='#'?'active':''}><AiOutlineHome/></a> 
-             <h6>Home</h6>        
-             </div>
-             <div>
-             <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav==='#about'?'active':''} ><AiOutlineUser/></a>
-             <h6>About</h6>  
-             </div>
-             <div>
-             <a href="#experience" onClick={()=>setActiveNav('#experience')}  className={activeNav==='#experience'?'active':''} ><MdWorkOutline/></a>
-             <h6>Experience</h6>  
-             </div>
-             <div>
-             <a href="#hobbies" onClick={()=>setActiveNav('#hobbies')}  className={activeNav==='#hobbies'?'active':''} ><SlGameController/></a>
-             <h6>Hobbies</h6>  
-             </div>
-            <div>
-            <a href="#contact" onClick={()=>setActiveNav('#contact')}  className={activeNav==='#contact'?'active':''} ><TiContacts/></a>
-            <h6>Contact</h6>  
-            </div>
+   
+    
+            {    data.map(val=>(
+                    <Navcomp key={val.name} active={activeNav} setActive={setActiveNav} {...val}/>
+                ))
             
-            
-           
-            
-            
+                  }
+          
 
 
         </nav>

@@ -2,6 +2,79 @@ import React from 'react'
 import './portfolio.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 import SKILL from '../../assets/Skills.jpg'
+import Skilldata from './skillcomponent';
+
+
+const techdata=[
+    {
+        "name": "JavaScript",
+        "level": "Intermediate"
+      },
+      {
+        "name": "React",
+        "level": "Intermediate"
+      },
+      {
+        "name": "HTML",
+        "level": "Intermediate"
+      },
+      {
+        "name": "CSS",
+        "level": "Intermediate"
+      },
+    
+
+      {
+        "name": "Python",
+        "level": "Experienced"
+      },
+      {
+        "name": "C++",
+        "level": "Experienced"
+      },
+      {
+        "name": "Java",
+        "level": "Experienced"
+      },
+     
+      {
+        "name": "ARM",
+        "level": "Intermediate"
+      },
+      {
+        "name": "YAML",
+        "level": "Intermediate"
+      }
+
+];
+
+const softdata=[
+
+    {
+        "name": "Communication",
+        "level": "4/5"
+      },
+      {
+        "name": "Negotiation",
+        "level": "4/5"
+      },
+      {
+        "name": "Writing",
+        "level": "4/5"
+      }
+
+
+];
+
+
+
+
+
+
+
+
+
+
 const Portfolio = () => {
     return (
         <section id="portfolio">
@@ -12,74 +85,26 @@ const Portfolio = () => {
                 <div className="skills_tech">
                    <h3>Tech Skills</h3>
                    <div className="skills_content">
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <div>
-                     <h4>PYTHON</h4>
-                     <small className='text-light'>Experienced</small>
 
-                     </div>
-                     
-                     </article>
-                     
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>C++</h4>
-                     <small className='text-light'>Experienced</small>
-                     </article>
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>C</h4>
-                     <small className='text-light'>Experienced</small>
-                     </article>
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>HTML</h4>
-                     <small className='text-light'>Intermediate</small>
-                     </article>
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>CSS</h4>
-                     <small className='text-light'>Intermediate</small>
-                     </article>
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>JAVASCRIPT</h4>
-                     <small className='text-light'>Experienced</small>
-                     </article>
-                     
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>ARM</h4>
-                     <small className='text-light'>Intermediate</small>
-                     </article>
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>YAML</h4>
-                     <small className='text-light'>Intermediate</small>
-                     </article>
+
+                    {techdata.map(skill=>(
+                       <Skilldata key={skill.name}  {...skill}/>
+
+                    ))}
+
+
                    </div>
                 </div>
 
                 <div className="skills_soft">
                    <h3>Soft Skills</h3>
                    <div className="skills_content_soft">
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>Communication</h4>
-                     <small className='text-light'>4/5</small>
-                     </article>
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>Negotiation</h4>
-                     <small className='text-light'>4/5</small>
-                     </article>
-                     <article className='skill_details'>
-                     <BsPatchCheckFill/>
-                     <h4>Writing</h4>
-                     <small className='text-light'>4/5</small>
-                     </article>
-                     
+                 
+                   {softdata.map(skill=>(
+                       <Skilldata key={skill.name} {...skill}/>
+
+                    ))}
+
                
                    </div>
                 </div>

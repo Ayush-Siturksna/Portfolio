@@ -4,6 +4,37 @@ import {FaAward} from  'react-icons/fa'
 import {SlGraduation}from 'react-icons/sl'
 import {AiOutlineFileDone} from  'react-icons/ai'
 import './about.css'
+import Aboutcomp from './aboutcomp'
+
+
+const data=  [{
+    "title": "WORK",
+    "org": "CAPGEMINI",
+    "desc": "Devnetops & Networking Engineer",
+    "Icon": AiOutlineFileDone
+  },
+  {
+    "title": "BTECH",
+    "org": "MNNIT ALLAHABAD",
+    "desc": "Mechanical Engineering \"CGPA:8/10\"",
+    "Icon": SlGraduation
+  },
+  {
+    "title": "CLASS XII",
+    "org": "JOINT MISSION HIGHER SECONDARY SCHOOL",
+    "desc": "MP Board \"88.4%\"",
+    "Icon": FaAward
+  },
+  {
+    "title": "CLASS X",
+    "org": "MACRO VISION ACADEMY",
+    "desc": "CBSE \"CGPA:10/10\"",
+    "Icon": FaAward
+  }
+] ;
+
+
+
 
 const About = () => {
     return (
@@ -32,50 +63,12 @@ const About = () => {
                <div className="about_content">
                  <div className="about_cards">
 
-                 
-                    <article className='about_card'>
-                        <AiOutlineFileDone className='about_icon'/>
-                        <h5>WORK</h5>
-                        <h6>CAPGEMINI</h6>
-                        <small>Devnetops & Networking Engineer</small>
+                     {
+                        data.map(val=>(
+                            <Aboutcomp key={val.title} {...val} />
+                        ))
+                     }
 
-                     </article>
-                     
-                     <article className='about_card'>
-                         <SlGraduation className='about_icon'/>
-                        <h5>BTECH</h5>
-                        <h6>MNNIT ALLAHABAD</h6>
-                        <small>
-                         Mechanical Engineering   "CGPA:8/10"
-                        </small>
-
-
-
-                     </article>
-                     <article className='about_card'>
-                         <FaAward className='about_icon'/>
-                        <h5>CLASS XII</h5>
-                        <h6>JOINT MISSION HIGHER SECONDARY SCHOOL</h6>
-                        <small>
-                         
-                         MP Board "88.4%"
-                        </small>
-
-
-
-                     </article>
-
-                     <article className='about_card'>
-                        <FaAward className='about_icon'/> 
-                        <h5>CLASS X</h5>
-                        <h6>MACRO VISION ACADEMY</h6>
-                        <small>
-                          CBSE "CGPA:10/10"
-                        </small>
-
-
-
-                     </article>
 
                  </div>
                 

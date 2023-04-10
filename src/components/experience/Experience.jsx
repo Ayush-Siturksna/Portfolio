@@ -1,80 +1,68 @@
 import React from 'react'
 import './experience.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import Project from './projectcomp'
+
+const projects = 
+[
+     {
+       "name": "Project 1",
+       "description": "A web application for managing tasks and to-do lists.",
+       "imageUrl": "portfolio1.jpg",
+       "git": "https://github.com",
+       "demo": "https://youtube.com"
+     },
+     {
+       "name": "Project 2",
+       "description": "A mobile app for tracking daily water intake.",
+       "imageUrl": 'portfolio2.jpg',
+       "git": "https://github.com",
+       "demo": "https://youtube.com"
+     },
+     {
+       "name": "Project 3",
+       "description": "A browser extension for dark mode on websites.",
+       "imageUrl": "portfolio3.jpg",
+       "git": "https://github.com",
+       "demo": "https://youtube.com"
+     },
+     {
+       "name": "Project 4",
+       "description": "A social network for pet owners to connect and share photos.",
+       "imageUrl": "portfolio4.jpg",
+       "git": "https://github.com",
+       "demo": "https://youtube.com"
+     },
+     {
+       "name": "Project 5",
+       "description": "An e-commerce platform for buying and selling handmade crafts.",
+       "imageUrl": "portfolio5.png",
+       "git": "https://github.com",
+       "demo": "https://youtube.com"
+     }, 
+     
+     {
+      "name": "Project 6",
+      "description": "An e-commerce platform for buying and selling handmade crafts.",
+      "imageUrl": "portfolio6.jpg",
+      "git": "https://github.com",
+      "demo": "https://youtube.com"
+    }
+   ]
+; 
+
+
+
 const Experience = () => {
     return (
        <section id="experience">
           <h5>What Projects I Have</h5>
           <h2>My Experience</h2>
           <div className="container experience_container">
-              <article className='experience_item'>
-               <div className="experience_item_image">
-                  <img src={IMG1} alt="project title"/>
-               </div>
-               <h3>Ths is experience title</h3>
-               <a href="https://github.com" className='btn' target='_blank'>Github</a>
-               <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-              </article>
 
 
-              <article className='experience_item'>
-               <div className="experience_item_image">
-                  <img src={IMG1} alt="project title"/>
-               </div>
-               <h3>Ths is experience title</h3>
-               <a href="https://github.com" className='btn' target='_blank'>Github</a>
-               <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-              </article>
-
-              <article className='experience_item'>
-               <div className="experience_item_image">
-                  <img src={IMG1} alt="project title"/>
-               </div>
-               <h3>Ths is experience title</h3>
-               <a href="https://github.com" className='btn' target='_blank'>Github</a>
-               <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-              </article>
-
-              <article className='experience_item'>
-               <div className="experience_item_image">
-                  <img src={IMG1} alt="project title"/>
-               </div>
-
-              
-               <h3>Ths is experience title</h3>
-               
-               
-               <a href="https://github.com" className='btn' target='_blank'>Github</a>
-                
-               
-               
-               <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-             
-                 
-              </article>
-
-              <article className='experience_item'>
-               <div className="experience_item_image">
-                  <img src={IMG1} alt="project title"/>
-               </div>
-               <h3>Ths is experience title</h3>
-               <a href="https://github.com" className='btn' target='_blank'>Github</a>
-               <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-              </article>
-
-              <article className='experience_item'>
-               <div className="experience_item_image">
-                  <img src={IMG1} alt="project title"/>
-               </div>
-               <h3>Ths is experience title</h3>
-               <a href="https://github.com" className='btn' target='_blank'>Github</a>
-               <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-              </article>
+              {projects.map(projectu => (
+               <Project key={projectu.name} {...projectu} />
+                 ) )}
 
           </div>
           
