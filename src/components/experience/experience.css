@@ -9,7 +9,18 @@
 
 }
 
+.expnameandlink{
+    padding: 0.5rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 2rem;
+}
 
+.experience_item >div > a{
+      
+    align-self: flex-end;
+ }
 
 
 
@@ -21,7 +32,9 @@
     transition: var(--transition);
     border-color: var(--color-primary-variant);
     justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .experience_item:hover {
@@ -49,7 +62,18 @@
 /*========Media Querries(Medium Devices)======*/
 
 @media screen and (max-width: 1024px) {
-
+    .experience_item {
+        background: transparent;
+        padding: 0.5rem;
+       
+    }
+    .experience_item >div > h3{
+        font-weight: 50;
+        font-size: small;
+        text-align: center;
+        
+     }
+   
   
     
   }
@@ -65,5 +89,35 @@
     
     
     }
+    .experience_item >div > h3{
+       font-weight: 50;
+       font-size: 3vw;
+       text-align: center;
+       
+    }
+  
+
+    .experience_item >div > a{
+      
+        align-self: center;
+     }
+ 
+    .expnameandlink{
+        padding: 0.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+       
+    .experience_item{
+        padding: 0.5rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     
   }
