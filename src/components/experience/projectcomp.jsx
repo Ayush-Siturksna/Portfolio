@@ -27,19 +27,22 @@ function Project(props) {
   // }, []);
 
   return (
-    <article className='experience_item'>
+    <articl className='experience_item'>
       <div className="experience_item_image">
         {img && <img src={img} alt="project title" />}
       </div>
+      <div className='expnameandlink'>
       <h3>{name}</h3>
     
       <a href={demo} target='_blank' rel='noopener noreferrer'>
-         <Icon/>
+       <Icon/>
       </a>
+      </div>
+      
      
 
 
-    </article>
+    </articl>
   );
 }
 

@@ -53,7 +53,7 @@ const projects =
      }, 
      
      {
-      "name": "Jbrowse GPT3 Integration",
+      "name": "Jbrowse+GPT3 Plugin",
       "description": "An e-commerce platform for buying and selling handmade crafts.",
       "imageUrl": "portfolio6.png",
       "git": "https://github.com",
